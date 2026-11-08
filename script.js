@@ -1,1 +1,18 @@
-let lang='en';const b=document.querySelector('#language');b.addEventListener('click',()=>{lang=lang==='en'?'pt':'en';document.documentElement.lang=lang;document.querySelectorAll('[data-en][data-pt]').forEach(e=>e.textContent=e.dataset[lang]);b.textContent=lang==='en'?'PT':'EN'});document.querySelector('#menu').addEventListener('click',()=>document.querySelector('#nav').classList.toggle('open'));document.querySelector('#year').textContent=new Date().getFullYear();
+
+let currentLanguage = "en";
+
+function toggleLanguage() {
+  currentLanguage = currentLanguage === "en" ? "pt" : "en";
+
+  document.documentElement.lang = currentLanguage;
+
+  document.querySelectorAll("[data-en][data-pt]").forEach((element) => {
+    element.innerHTML = element.getAttribute("data-" + currentLanguage);
+  });
+
+  const languageButton = document.querySelector(".lang");
+
+  if (languageButton) {
+    languageButton.textContent = currentLanguage === "en" ? "PT" : "EN";
+  }
+}
