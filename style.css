@@ -171,3 +171,47 @@ body > main > section:first-child p {
     padding: 90px 7% !important;
   }
 }
+/* UMLENS — DESKTOP CONTACT FORM FIX */
+@media (min-width: 851px) {
+
+  #contact form {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    max-width: 680px !important;
+    margin: 40px auto !important;
+    padding: 40px !important;
+    gap: 18px !important;
+    box-sizing: border-box !important;
+  }
+
+  #contact form label {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+  }
+
+  #contact form input:not([type="checkbox"]),
+  #contact form select,
+  #contact form textarea {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  #contact form input[type="checkbox"] {
+    display: inline-block !important;
+    width: auto !important;
+  }
+
+  #contact form textarea {
+    min-height: 160px !important;
+  }
+
+  #contact form button {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
