@@ -329,18 +329,67 @@ We believe every restaurant deserves a visual identity that makes a lasting impr
 </section>
 
 <section class="contact" id="contact">
-<div class="label">05 — LET'S CONNECT</div>
-<h2 data-en="Let's Create Something Beautiful."
-data-pt="Vamos Criar Algo Especial.">
-Let's Create Something Beautiful.
-</h2>
-<p data-en="Ready to give your restaurant a new identity?"
-data-pt="Pronto para dar uma nova identidade ao seu restaurante?">
-Ready to give your restaurant a new identity?
-</p>
-<a class="btn" href="mailto:umlensstudio@gmail.com"
-data-en="CONTACT OUR STUDIO →"
-data-pt="CONTACTAR O ESTÚDIO →">CONTACT OUR STUDIO →</a>
+  <div class="label">05 — LET'S CONNECT</div>
+
+  <h2>Start Your Restaurant Project</h2>
+  <p>Tell us what your restaurant needs. We'll get back to you soon.</p>
+
+  <form action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key"
+    value="cb475404-b004-4aed-9d78-0d8e83c98374">
+
+    <input type="hidden" name="subject"
+    value="New UMLENS Professional Enquiry">
+
+    <input type="hidden" name="from_name"
+    value="UMLENS Website">
+
+    <label>Restaurant Name</label>
+    <input type="text" name="restaurant_name"
+    placeholder="Your restaurant name" required>
+
+    <label>Select Your Package</label>
+    <select name="package" required>
+      <option value="">Choose a package</option>
+      <option>Essential — €79+</option>
+      <option>Signature — €199+</option>
+      <option>Exclusive — €349+</option>
+      <option>Custom Project</option>
+    </select>
+
+    <label>Services Required</label>
+
+    <label>
+      <input type="checkbox" name="services[]" value="Menu Design">
+      Menu Design
+    </label>
+
+    <label>
+      <input type="checkbox" name="services[]" value="Food Photography">
+      Food Photography
+    </label>
+
+    <label>
+      <input type="checkbox" name="services[]" value="QR Menu">
+      QR Menu
+    </label>
+
+    <label>
+      <input type="email" name="email"
+      placeholder="Your email address" required>
+    </label>
+
+    <label>Project Details</label>
+    <textarea name="project_details"
+    placeholder="Tell us about your restaurant and project..."
+    rows="5" required></textarea>
+
+    <button type="submit" class="btn">
+      SEND ENQUIRY →
+    </button>
+
+  </form>
 </section>
 
 </main>
