@@ -208,7 +208,93 @@ footer{flex-direction:column;gap:10px}
 nav{gap:7px}
 nav a{font-size:9px}
 .services-grid,.portfolio-grid{grid-template-columns:1fr}
+/* UMLENS PROFESSIONAL ENQUIRY FORM */
+
+#contact form {
+    max-width: 680px;
+    margin: 45px auto 0;
+    padding: 40px;
+    background: #f7f5f0;
+    color: #171717;
+    border: 1px solid #d6c6a0;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    text-align: left;
 }
+
+#contact form label {
+    display: block;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+#contact form input:not([type="checkbox"]),
+#contact form select,
+#contact form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d8d2c7;
+    background: #fff;
+    color: #171717;
+    font: inherit;
+    font-size: 14px;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+#contact form input:focus,
+#contact form select:focus,
+#contact form textarea:focus {
+    outline: 1px solid #b49a70;
+    border-color: #b49a70;
+}
+
+#contact form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+#contact form label:has(input[type="checkbox"]) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+#contact form input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #b49a70;
+}
+
+#contact form button {
+    width: 100%;
+    padding: 17px;
+    background: #b49a70;
+    color: #171717;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+#contact form button:hover {
+    background: #171717;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    #contact form {
+        padding: 22px;
+        margin: 30px 15px;
+    }
+}}
 </style>
 </head>
 
